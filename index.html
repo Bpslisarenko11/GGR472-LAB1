@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGR472-LAB1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--This links to the css file, where additional colours for text and background are chosen-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--This adds a navigator bar, with additional items--> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Lab 1</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!--This adds different items in the navigation bar, which link to different html pages-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Tommy-Thompson-Park.html">Tommy Thompson Park</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="High-Park.html">High Park</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Riverdale-Park.html">Riverdale Park</a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+<!--This moves all content in the div tag to the center of the screen-->      
+<div class="container text-center">
+    <div>
+        <!--This adds a main and subheading and a clickable link to a website-->
+        <h1>GGR472 Lab 1</h1>
+        <h2>Amazing Parks across Toronto</h2>
+        <p><br> Learn more about <a target="_blank" href="https://tommythompsonpark.ca/">one of Toronto's largest parks here</a></p>
+    </div>
+    <!--Adds a row, and links to the .jpg image in the folder and inserts it-->
+    <div class="row">
+        <img src="Tommy Thompson Park Sun.jpg" alt="pond with ducks and sun">
+    </div>
+    <!--Adds a new row, and adds a clickable link to the GeoJSON file-->
+    <div class="row">
+      <p><br>More info on different parks can be seen in <a target="_blank" href="Toronto_Parks.geojson">the GeoJSON file</a></p>
+    </div>
+    <!--Adds another row with text-->
+    <div class="row">
+      <p><br>Read about Three different parks by clicking on the names in the navigator bar at the top, then answer the question below</p>
+    </div>
+    <!--Creates another text row-->
+    <div class="row">
+      <p>Which of the following parks is your favourite?</p>
+    </div>
+    <!--This adds a row which is split into three different columns,with each column containing a button with a park name inside it-->
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-primary" id="Tommy-Thompson-Park-button">Tommy Thompson Park</button>
+        </div>
+
+        <div class="col">
+          <button type="button" class="btn btn-primary" id="High-Park-button">High Park</button>
+        </div>
+
+        <div class="col">
+          <button type="button" class="btn btn-primary" id="Riverdale-Park-button">Riverdale Park</button>
+        </div>
+    </div>
+    <!--This adds a row with a fourth button-->
+    <div class="row">
+      <div class="col">
+        <br><button type="button" class="btn btn-primary" id="none-button">None of the above</button>
+        <!--Add breaks to include more blank space at the bottom off the screen-->
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+</div>
+<!--link to the internal javascript file-->
+<script src="script.js"></script>
+<!--Link to external bootstrap site-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

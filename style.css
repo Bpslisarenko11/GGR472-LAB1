@@ -1,0 +1,14 @@
+/*This changes the background colour of the body of the index.html file*/
+body {
+    background-color: beige;
+}
+/*This changes the colour of the heading text*/
+h1 {
+    color: black;
+}
+/*This changes the size of the image inserted into the index.html file*/
+img {
+    width: 10px;
+    height: 300px;
+    object-fit: contain;
+}
